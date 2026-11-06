@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>The Dance | Furloween 2012</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="scripts/jquery.fancybox.css" type="text/css" media="screen" />
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+	
+	<!-- IFRAME FIX -->
+	<script type="text/javascript">
+	$(document).ready(function(){
+		if(self != top){
+			top.location = self.location;
+		}
+	});
+	</script>	
+	<!-- /IFRAME FIX -->
+</head>
+<body>
+	<div id="overlay">
+        <div id="content">
+			<div id="right">
+				<a href="index.htm"><img src="images/logo-small.png" alt="logo" title="Furloween 2012" /></a>
+				<ul id="navigation">
+					<li><a href="index.htm">Home</a></li>
+					<li><a href="dance.htm">The Dance</a></li>
+					<li><a href="picnic.htm">The Picnic</a></li>
+					<li><a href="register.htm">Register</a></li>
+					<li><a href="hotel.htm">Hotel</a></li>
+					<li><a href="conduct.htm">Conduct</a></li>
+					<li><a href="contact.htm">Contact Us</a></li>
+				</ul>       
+			</div>
+			<div id="left">
+				<h1>Code of Conduct</h1>
+
+				<h3>Or: How NOT to Get Thrown Out of the Elk's Lodge</h3>
+
+				<p>I trust you guys to keep your friends sane. So here's the bit for those of you new to things!</p>
+				<ul>
+					<li>Do  party things. Treat  the  Elk's Lodge  as  you  would  want  your  home
+						treated. </li>
+					<li> Treat each  other  and  the  Elk's with  respect. Listen to the folks  who  
+						are  running the  party. Their  sole  purpose  is  to  see  you  have  a safe, 
+						fun  time.</li>
+					<li>Don't drink  outside the  Lodge; don't  terrorize  the  neighborhood (Though  
+						really,  that  was  awesome. Buy me a drink and I'll tell you the story.) </li>
+				</ul>
+				<p>
+				We'll  have  a few  folks  on  hand  doing party  patrol. If you  need  help,  just  
+				grab  one  of  them or someone from registration. <em>One  more thing, please don't bring any alcohol of your own.  
+				It can  cause the  Elk's to lose their  liquor license. It's not like 
+				thier prices are high. If it's really bad, and you GOTTA have a drink... 
+				Hell Just ask Mach for one. He'll be like, "Ummm who are  you? Oh, okay. "</em></p>
+
+				<p>Last year was fantastic! We didn't have a single problem and I'd love to see 
+				this become a regular thing. Thanks, and can't wait to see you folks there!</p>
+
+				<div class="end">
+					<img src="images/content-03.jpg" alt="footer fursuiter" />
+				</div>
+			</div>
+            <div style="clear: both;"></div>
+			<div id="credits">Copyright &copy; 2012 Furloween &bull; Site Design by Radix &bull; <a href="http://validator.w3.org/check?uri=referer">HTML 5</a></div>
+        </div>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(function(){
+			const randomNum = Math.floor(Math.random() * 10) + 1;
+			const padded = String(randomNum).padStart(2, '0');
+			$("body").addClass("pic"+padded);
+		})
+	</script>
+</body>
+</html>

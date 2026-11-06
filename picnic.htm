@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>The Picnic | Furloween 2012</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="scripts/jquery.fancybox.css" type="text/css" media="screen" />
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+	
+	<!-- IFRAME FIX -->
+	<script type="text/javascript">
+	$(document).ready(function(){
+		if(self != top){
+			top.location = self.location;
+		}
+	});
+	</script>	
+	<!-- /IFRAME FIX -->
+</head>
+<body>
+	<div id="overlay">
+        <div id="content">
+			<div id="right">
+				<a href="index.htm"><img src="images/logo-small.png" alt="logo" title="Furloween 2012" /></a>
+				<ul id="navigation">
+					<li><a href="index.htm">Home</a></li>
+					<li><a href="dance.htm">The Dance</a></li>
+					<li><a href="picnic.htm">The Picnic</a></li>
+					<li><a href="register.htm">Register</a></li>
+					<li><a href="hotel.htm">Hotel</a></li>
+					<li><a href="conduct.htm">Conduct</a></li>
+					<li><a href="contact.htm">Contact Us</a></li>
+				</ul>       
+			</div>
+			<div id="left">
+				<h1>The Picnic</h1>
+
+				<div class="sidemenu">
+					<table class="grid">
+						<tr>
+							<th scope="row">Date</th>
+							<td>10/28/2012</td>
+						</tr>
+						<tr>
+							<th scope="row">Time</th>
+							<td>Noon - 7pm</td>
+						</tr>
+						<tr>
+							<th scope="row">Where</th>
+							<td><a href="http://maps.google.com/maps?saddr=28.581205,+-81.231489&amp;hl=en&amp;ll=28.580376,-81.23055&amp;spn=0.016186,0.027874&amp;sll=28.58179,-81.231456&amp;sspn=0.002289,0.003954&amp;mra=ls&amp;t=m&amp;z=16&amp;vpsrc=6">Blanchard Park</a></td>
+						</tr>
+						<tr>
+							<th scope="row">Cost</th>
+							<td>FREE</td>
+						</tr>
+					</table>
+				</div>
+
+				<p>Held each year at <a href="http://maps.google.com/maps?saddr=28.581205,+-81.231489&amp;hl=en&amp;ll=28.580376,-81.23055&amp;spn=0.016186,0.027874&amp;sll=28.58179,-81.231456&amp;sspn=0.002289,0.003954&amp;mra=ls&amp;t=m&amp;z=16&amp;vpsrc=6">Blanchard Park</a>, the Furloween Picnic is a chance to relax and chill after the insanity of the night before. This event is potluck, so bring something to munch, something 
+				to cook, or something to drink. Also bring your favorite outdoor toys to enjoy! The picnic starts at noon and runs until park close. We'll be down by the dam, across from the playground, and right next to the YMCA. 
+				Just look for the column of fire from our BBQ and you should be right on track!</p>
+
+				<h2>Activites</h2>
+
+				<p>Activites TBD!</p>
+
+				<h2>Directions</h2>
+				<p>Here's a Google Maps link to <a href="http://maps.google.com/maps?saddr=28.581205,+-81.231489&amp;hl=en&amp;ll=28.580376,-81.23055&amp;spn=0.016186,0.027874&amp;sll=28.58179,-81.231456&amp;sspn=0.002289,0.003954&amp;mra=ls&amp;t=m&amp;z=16&amp;vpsrc=6">Blanchard Park</a>; use it to get your own directions to the spot! Note: this is the <em>exact</em> spot. Once you get there, find a place to park, and look down 
+				towards the water, that's where we'll be. Unless of course, someone already has both tables, in which case, we'll be around there.</p>
+
+				<div class="end">
+					<img src="images/content-05.jpg" alt="footer fursuiter" />
+				</div>
+			</div>
+            <div style="clear: both;"></div>
+			<div id="credits">Copyright &copy; 2012 Furloween &bull; Site Design by Radix &bull; <a href="http://validator.w3.org/check?uri=referer">HTML 5</a></div>
+        </div>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(function(){
+			const randomNum = Math.floor(Math.random() * 10) + 1;
+			const padded = String(randomNum).padStart(2, '0');
+			$("body").addClass("pic"+padded);
+		})
+	</script>
+</body>
+</html>
