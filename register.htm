@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Register | Furloween 2012</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Register | Furloween 2012</title>
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="scripts/jquery.fancybox.css" type="text/css" media="screen" />
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
-	
+
 	<!-- IFRAME FIX -->
 	<script type="text/javascript">
-	$(document).ready(function(){
-		if(self != top){
-			top.location = self.location;
-		}
-	});
-	</script>	
+		$(document).ready(function () {
+			if (self != top) {
+				top.location = self.location;
+			}
+		});
+	</script>
 	<!-- /IFRAME FIX -->
 </head>
+
 <body>
 	<div id="overlay">
-        <div id="content">
+		<div id="content">
 			<div id="right">
 				<a href="index.htm"><img src="images/logo-small.png" alt="logo" title="Furloween 2012" /></a>
 				<ul id="navigation">
@@ -30,7 +31,7 @@
 					<li><a href="hotel.htm">Hotel</a></li>
 					<li><a href="conduct.htm">Conduct</a></li>
 					<li><a href="contact.htm">Contact Us</a></li>
-				</ul>       
+				</ul>
 			</div>
 			<div id="left">
 				<h1>Register for the Party!</h1>
@@ -38,19 +39,19 @@
 				<p>Hey folks! We ask that you RSVP for Furloween for a few reasons:</p>
 				<ol>
 					<li>It saves us time giving you a badge.</li>
-					<li>It lets us know how many are coming so we have enough food and 
+					<li>It lets us know how many are coming so we have enough food and
 						drink for all. </li>
 					<li>It allows us to prep some games ahead of time.</li>
 				</ol>
 				<p>The cost of the event is <strong>$30</strong>, which will be collected at the door.</p>
 
 				<h3> Hey folks, the rsvp is now closed. You can still give us your info, and please do, but keep in mind
-				those that RSVP'ed on time get first choice if we end up with too little food.</h3>
+					those that RSVP'ed on time get first choice if we end up with too little food.</h3>
 
 				<form id="register" action="thanks.htm" method="post" class="fieldset">
 					<fieldset>
 						<legend>Personal Information</legend>
-						
+
 						<div class="global-col2-1">
 							<label for="f_name">First Name</label>
 							<input type="text" maxlength="30" name="f_name" id="f_name" class="required" />
@@ -60,7 +61,7 @@
 							<input type="text" maxlength="30" name="l_name" id="l_name" class="required" />
 						</div>
 						<div class="clear: both;"></div>
-						
+
 						<div class="global-col2-1">
 							<label for="nickname">Nickname / Badge</label>
 							<input type="text" maxlength="30" name="nickname" id="nickname" class="required" />
@@ -74,42 +75,42 @@
 
 					<fieldset>
 						<legend>Event Information</legend>
-						
+
 						<label>Do you need access to a green room or changing room?</label>
 						<input type="radio" name="costume" value="Yes" id="costume-yes" /><label for="costume-yes">Yes</label>
 						<input type="radio" name="costume" value="No" id="costume-no" /><label for="costume-no">No</label>
-					
+
 						<label>Are you a vegetarian?</label>
 						<input type="radio" name="vegitarian" value="Yes" id="vege-yes" /><label for="vege-yes">Yes</label>
 						<input type="radio" name="vegitarian" value="No" id="vege-no" /><label for="vege-no">No</label>
-					
+
 						<label>Are you planning to attend the picnic on Sunday?</label>
 						<input type="radio" name="picnic" value="Yes" id="picnic-yes" /><label for="picnic-yes">Yes</label>
 						<input type="radio" name="picnic" value="No" id="picnic-no" /><label for="picnic-no">No</label>
 
 						<p>
-						<label for="comments">Do you have any other comments, suggestions, or ideas?</label>
-						<textarea rows="4" cols="65" name="comments" id="comments"></textarea>
+							<label for="comments">Do you have any other comments, suggestions, or ideas?</label>
+							<textarea rows="4" cols="65" name="comments" id="comments"></textarea>
 						</p>
-					
+
 						<p><input type="submit" value="Submit Your Registration" /></p>
 					</fieldset>
 				</form>
 			</div>
-            <div style="clear: both;"></div>
-			<div id="credits">Copyright &copy; 2012 Furloween &bull; Site Design by Radix &bull; <a href="http://validator.w3.org/check?uri=referer">HTML 5</a></div>
-        </div>
+			<div style="clear: both;"></div>
+		</div>
 	</div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script type="text/javascript" src="scripts/jquery.validate.min.js"></script>
 	<script type="text/javascript">
-		$(function(){
-			$('#register').validate();		
+		$(function () {
+			$('#register').validate();
 
 			const randomNum = Math.floor(Math.random() * 10) + 1;
 			const padded = String(randomNum).padStart(2, '0');
-			$("body").addClass("pic"+padded);
+			$("body").addClass("pic" + padded);
 		})
 	</script>
 </body>
+
 </html>

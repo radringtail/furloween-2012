@@ -1,25 +1,16 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Furloween 2012</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Furloween 2012</title>
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="scripts/jquery.fancybox.css" type="text/css" media="screen" />
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
-	
-	<!-- IFRAME FIX -->
-	<script type="text/javascript">
-	$(document).ready(function(){
-		if(self != top){
-			top.location = self.location;
-		}
-	});
-	</script>	
-	<!-- /IFRAME FIX -->
 </head>
+
 <body>
 	<div id="overlay">
-        <div id="content">
+		<div id="content">
 			<div id="right">
 				<a href="index.htm"><img src="images/logo-small.png" alt="logo" title="Furloween 2012" /></a>
 				<ul id="navigation">
@@ -30,14 +21,14 @@
 					<li><a href="hotel.htm">Hotel</a></li>
 					<li><a href="conduct.htm">Conduct</a></li>
 					<li><a href="contact.htm">Contact Us</a></li>
-				</ul>       
+				</ul>
 			</div>
 			<div id="left">
 				<h2>Thank You!</h2>
 
 				<p>Thank you all for making Furloween a success for the 13th (14th?) straight year! We were
-				very happy with the turnout and so honored to have each and every attending furball join us!
-				A special thanks to all staff and volunteers; we couldn't have done it without you!</p>
+					very happy with the turnout and so honored to have each and every attending furball join us!
+					A special thanks to all staff and volunteers; we couldn't have done it without you!</p>
 
 				<p>Furloween will reappear on October 19th, 2013! Visit this site in late September 2013 to register. Our next mascot will be a <a href="http://en.wikipedia.org/wiki/Hyena">hyena</a>!</p>
 
@@ -47,29 +38,30 @@
 
 				<h3>October 27th, 2012 &bull; 6pm - 2am &bull; <a href="http://maps.google.com/maps?f=l&amp;hl=en&amp;q=elks++lodge&amp;sll=37.0625,-95.677068&amp;sspn=50.157795,63.28125&amp;ie=UTF8&amp;cd=2&amp;near=Primrose+Ave,+Orlando,+Orange,+Florida,+United+States&amp;geocode=FbiFswEdX7sm-w&amp;z=14&amp;iwloc=A&amp;cid=28542820,-81348402,8526322323810327050&amp;ll=28.555199,-81.344233&amp;source=embed">Orlando Elk's Lodge</a> &bull; $30</h3>
 
-				<p>Furloween has simple goals: to bring together furries and friends of the southeast for a fun weekend; to have a good  
-				time in a relaxing enviroment; to renew old friendships,  create  new  ones,  and  break down  the  walls  we  build  up  around  
-				ourselves  over  time. Halloween is a reminder to us that life is too short to fear the things that go bump in the night. 
-				Even <strong>werewolves</strong> need hugs! </p>
+				<p>Furloween has simple goals: to bring together furries and friends of the southeast for a fun weekend; to have a good
+					time in a relaxing enviroment; to renew old friendships, create new ones, and break down the walls we build up around
+					ourselves over time. Halloween is a reminder to us that life is too short to fear the things that go bump in the night.
+					Even <strong>werewolves</strong> need hugs! </p>
 
 				<p>Everyone needs to have ID available and if you are under age, to get your parent's permission and have the
-				<a href="docs/consent-form.pdf">Parental Consent Form</a> signed.</p>
+					<a href="docs/consent-form.pdf">Parental Consent Form</a> signed.
+				</p>
 
 				<div class="end">
 					<img src="images/content-02.jpg" alt="footer fursuiter" />
 				</div>
 			</div>
-            <div style="clear: both;"></div>
-			<div id="credits">Copyright &copy; 2012 Furloween &bull; Site Design by Radix &bull; <a href="http://validator.w3.org/check?uri=referer">HTML 5</a></div>
-        </div>
+			<div style="clear: both;"></div>
+		</div>
 	</div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script>
-		$(function(){
+		$(function () {
 			const randomNum = Math.floor(Math.random() * 10) + 1;
 			const padded = String(randomNum).padStart(2, '0');
-			$("body").addClass("pic"+padded);
+			$("body").addClass("pic" + padded);
 		})
 	</script>
 </body>
+
 </html>

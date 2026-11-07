@@ -1,25 +1,16 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Contact | Furloween 2012</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Contact | Furloween 2012</title>
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="scripts/jquery.fancybox.css" type="text/css" media="screen" />
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
-	
-	<!-- IFRAME FIX -->
-	<script type="text/javascript">
-	$(document).ready(function(){
-		if(self != top){
-			top.location = self.location;
-		}
-	});
-	</script>	
-	<!-- /IFRAME FIX -->
 </head>
+
 <body>
 	<div id="overlay">
-        <div id="content">
+		<div id="content">
 			<div id="right">
 				<a href="index.htm"><img src="images/logo-small.png" alt="logo" title="Furloween 2012" /></a>
 				<ul id="navigation">
@@ -30,47 +21,47 @@
 					<li><a href="hotel.htm">Hotel</a></li>
 					<li><a href="conduct.htm">Conduct</a></li>
 					<li><a href="contact.htm">Contact Us</a></li>
-				</ul>       
+				</ul>
 			</div>
 			<div id="left">
 				<h1>Contact Us</h1>
 
 				<p><strong>Party Coordinator / Screw-Up</strong><br />
-				Mach</p>
+					Mach</p>
 
 				<p><strong>Assistant Party Coordinator</strong><br />
-				Shep Otterpaw</p>
+					Shep Otterpaw</p>
 
 				<p><strong>Video and Sound / DJ / God</strong><br />
-				Yappy Fox</p>
+					Yappy Fox</p>
 
 				<p><strong>Art and Decor / DJ</strong><br />
-				Herbie</p>
+					Herbie</p>
 
 				<p><strong>Resident DJs</strong><br />
-				TBA!</p>
+					TBA!</p>
 
 				<p><strong>Party Patrol</strong><br />
-				Urson<br />
-				ScrubWolf</p>
+					Urson<br />
+					ScrubWolf</p>
 
 				<p><strong>Registration</strong><br />
-				Stitch (No, Orlando Stitch!)</p>
+					Stitch (No, Orlando Stitch!)</p>
 
 				<p><strong>Badge Design and Printing</strong><br />
-				Kryphos</p>
+					Kryphos</p>
 			</div>
-            <div style="clear: both;"></div>
-			<div id="credits">Copyright &copy; 2012 Furloween &bull; Site Design by Radix &bull; <a href="http://validator.w3.org/check?uri=referer">HTML 5</a></div>
-        </div>
+			<div style="clear: both;"></div>
+		</div>
 	</div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script>
-		$(function(){
+		$(function () {
 			const randomNum = Math.floor(Math.random() * 10) + 1;
 			const padded = String(randomNum).padStart(2, '0');
-			$("body").addClass("pic"+padded);
+			$("body").addClass("pic" + padded);
 		})
 	</script>
 </body>
+
 </html>
